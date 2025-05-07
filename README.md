@@ -1,12 +1,13 @@
 # Personal Portfolio Website
 
-A responsive multi-page portfolio website with a black and yellow color scheme, designed for a Computer Technology student specializing in Data Science and Database Management.
+A responsive multi-page portfolio website with a modern dark theme, designed for a Computer Technology student specializing in Data Science and Database Management.
 
 ## Features
 
 - Multi-page layout with separate pages for each section
 - Responsive design that works on all devices
-- Black and yellow color scheme
+- Modern dark theme with elegant color scheme
+- Interactive AI-powered chatbot for visitor assistance
 - Mobile-friendly hamburger menu
 - Pages for Home, About, Skills, Projects, Resume, and Contact
 - Modern and clean design
@@ -20,6 +21,22 @@ A responsive multi-page portfolio website with a black and yellow color scheme, 
 - **Projects (projects.html)**: Portfolio of your projects with descriptions
 - **Resume (resume.html)**: Display and download options for your resume
 - **Contact (contact.html)**: Contact form and information
+
+## Interactive Chatbot
+
+The website features an AI-powered chatbot that provides:
+- Real-time assistance to visitors
+- Information about your skills and experience
+- Project details and descriptions
+- Quick navigation help
+- Contact information
+- Resume download assistance
+
+To interact with the chatbot:
+1. Click the chat icon in the bottom right corner
+2. Type your question or request
+3. Receive instant AI-powered responses
+4. Use the chatbot to navigate through the website
 
 ## Customization
 
@@ -36,10 +53,12 @@ A responsive multi-page portfolio website with a black and yellow color scheme, 
 The color scheme can be modified in `styles.css`:
 ```css
 :root {
-    --primary-color: #FFD700; /* Yellow */
-    --secondary-color: #000000; /* Black */
-    --text-color: #333333;
-    --background-color: #ffffff;
+    --primary-color: #1a237e; /* Dark Blue */
+    --secondary-color: #8d6e63; /* Brown */
+    --accent-color: #f5f5dc; /* Vanilla Beige */
+    --text-color: #333;
+    --light-text: #fff;
+    --background-color: #000;
 }
 ```
 
@@ -80,7 +99,8 @@ Update your contact information in `contact.html`:
 ## Dependencies
 
 - Font Awesome 6.0.0 (for icons)
-- No other external dependencies required
+- Custom JavaScript for interactive features
+- AI-powered chatbot functionality
 
 ## License
 
