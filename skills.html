@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Brice William Fokou</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .skills-container {
+            padding: 2rem 0;
+        }
+        .skills-grid {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .skill-category {
+            background: rgba(26, 35, 126, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            flex: 1;
+            max-width: 450px;
+            border: 1px solid rgba(245, 245, 220, 0.1);
+        }
+        .skill-category:hover {
+            transform: translateY(-5px);
+            background: rgba(26, 35, 126, 0.2);
+        }
+        .skill-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid rgba(245, 245, 220, 0.1);
+        }
+        .skill-header i {
+            font-size: 2rem;
+            color: #f5f5dc;
+        }
+        .skill-header h3 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #f5f5dc;
+        }
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skill-category li {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #f5f5dc;
+        }
+        .skill-category li i {
+            color: #8d6e63;
+        }
+        .section-heading {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: #f5f5dc;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: #1a237e;
+        }
+        .certifications-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .certification-card {
+            background: rgba(26, 35, 126, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            max-width: 400px;
+            border: 1px solid rgba(245, 245, 220, 0.1);
+        }
+        .certification-card:hover {
+            transform: translateY(-5px);
+            background: rgba(26, 35, 126, 0.2);
+        }
+        .certification-icon {
+            font-size: 2.5rem;
+            color: #f5f5dc;
+            margin-bottom: 1rem;
+        }
+        .certification-content h3 {
+            color: #f5f5dc;
+            margin-bottom: 0.5rem;
+        }
+        .certification-content p {
+            color: #f5f5dc;
+            margin-bottom: 0.5rem;
+        }
+        .certification-date {
+            display: inline-block;
+            background: #1a237e;
+            color: #f5f5dc;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .certification-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #8d6e63;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .certification-link:hover {
+            color: #f5f5dc;
+        }
+        @media (max-width: 768px) {
+            .skills-grid {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+            .skill-category {
+                width: 100%;
+                max-width: 100%;
+            }
+            .certifications-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .certification-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-heading">SKILLS</h2>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming & Tools</h3>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Java</li>
+                            <li><i class="fas fa-check"></i>JavaScript</li>
+                            <li><i class="fas fa-check"></i>Python</li>
+                            <li><i class="fas fa-check"></i>Git & Version Control</li>
+                            <li><i class="fas fa-check"></i>HTML/CSS</li>
+                            <li><i class="fas fa-check"></i>Object-Oriented Programming</li>
+                            <li><i class="fas fa-check"></i>C++</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Data Analysis & Database</h3>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>SQL (MySQL, PostgreSQL)</li>
+                            <li><i class="fas fa-check"></i>SQL Developer</li>
+                            <li><i class="fas fa-check"></i>Data Analysis & Visualization</li>
+                            <li><i class="fas fa-check"></i>Database Design & Optimization</li>
+                            <li><i class="fas fa-check"></i>Anaconda</li>
+                            <li><i class="fas fa-check"></i>Tableau & Power BI</li>
+                            <li><i class="fas fa-check"></i>Data Mining</li>
+                            <li><i class="fas fa-check"></i>Data Wrangling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-heading">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Professional Scrum Master II (PSM II)</h3>
+                        <p>Scrum.org</p>
+                        <a href="https://www.credly.com/badges/e1517fe4-2e08-4df5-85d1-67fa364d30c6/public_url" target="_blank" class="certification-link">
+                            <i class="fas fa-external-link-alt"></i> View Badge
+                        </a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Kanban Management Professional (KMP)</h3>
+                        <p>Kanban University</p>
+                        <a href="https://www.credly.com/badges/73606b50-8f76-4da2-bec4-671f598ed1e9/public_url" target="_blank" class="certification-link">
+                            <i class="fas fa-external-link-alt"></i> View Badge
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://github.com/brice-william" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/brice-fokou" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>&copy; 2024 Brice William Fokou. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html> 
